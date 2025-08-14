@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MSA Shopp — Toko Online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+</html>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">MSA Shopp</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#products">Produk</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / BERANDA -->
+    <section id="home" class="hero hero-msa">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h2 class="hero-title">SELAMAT DATANG DI <span class="brand">MSA SHOPP</span></h2>
+          <p class="hero-sub">Temukan stok lengkap kami: tas, sepatu, baju kaos, jam, celana pendek, dan banyak lagi. Belanja mudah — kualitas terjamin.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#products">Lihat Produk</a>
+            <a class="btn ghost" href="#contact">Hubungi Kami</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <!-- ilustrasi / gambar hero -->
+          <img src="cca04c7d-9827-42a1-8458-e2d60d7d903e.png" alt="Ilustrasi MSA Shopp" class="hero-image">
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUK -->
+    <section id="products" class="container">
+      <h3 class="section-title">Stok Produk Kami</h3>
+      <div class="cards" id="productCards"></div>
+    </section>
+
+    <!-- CONTACT / ORDER -->
+    <section id="contact" class="container contact">
+      <h3 class="section-title">Hubungi / Order</h3>
+      <form id="orderForm">
+        <label>Nama
+          <input type="text" name="name" required />
+        </label>
+        <label>Email / WhatsApp
+          <input type="text" name="contact" required />
+        </label>
+        <label>Produk yang dipesan
+          <input type="text" name="product" id="orderProduct" readonly />
+        </label>
+        <label>Pesan tambahan
+          <textarea name="message" rows="4"></textarea>
+        </label>
+        <button type="submit" class="btn">Kirim Pesanan</button>
+      </form>
+      <p class="note">Demo: form ini tidak terhubung ke server — Anda bisa menghubungkannya ke backend atau WhatsApp Terimakasih.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MSA Shopp — Belanja mudah dan aman</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSA Shopp</title>
+</head>
+<body>
+    <!-- Tombol WhatsApp -->
+    <a href="https://wa.me/6281234567890?text=Halo%20admin%2C%20saya%20mau%20pesan" target="_blank">
+        <button style="background-color:green;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">
+            Chat via WhatsApp
+        </button>
+    </a>
+</html>
